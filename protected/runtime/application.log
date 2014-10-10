@@ -1,0 +1,112 @@
+2014/10/10 01:52:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin".' in /var/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('admin')
+#1 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/smartad/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/admin
+---
+2014/10/10 02:01:37 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'smart_ad.role_controller' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `role_controller`.
+in /var/www/smartad/index.php (13)
+2014/10/10 02:01:37 [error] [exception.CDbException] exception 'CDbException' with message 'The table "role_controller" for active record class "Acl" cannot be found in the database.' in /var/www/framework/db/ar/CActiveRecord.php:2362
+Stack trace:
+#0 /var/www/framework/db/ar/CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Acl))
+#1 /var/www/framework/db/ar/CActiveRecord.php(138): CActiveRecord->getMetaData()
+#2 /var/www/framework/gii/generators/crud/CrudCode.php(66): CActiveRecord->__get('tableSchema')
+#3 /var/www/framework/validators/CInlineValidator.php(42): CrudCode->validateModel('model', Array)
+#4 /var/www/framework/validators/CValidator.php(213): CInlineValidator->validateAttribute(Object(CrudCode), 'model')
+#5 /var/www/framework/base/CModel.php(159): CValidator->validate(Object(CrudCode), NULL)
+#6 /var/www/framework/gii/CCodeGenerator.php(159): CModel->validate()
+#7 /var/www/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 /var/www/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /var/www/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/framework/web/CWebApplication.php(282): CController->run('index')
+#13 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/crud/index')
+#14 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/smartad/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php/gii/crud/index
+HTTP_REFERER=http://smartad.local/index.php/gii/crud/index
+---
+2014/10/10 02:24:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin".' in /var/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('admin')
+#1 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/smartad/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/admin
+---
+2014/10/10 02:24:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin".' in /var/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('admin')
+#1 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/smartad/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/admin
+---
+2014/10/10 02:24:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin".' in /var/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('admin')
+#1 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/smartad/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/admin
+---
+2014/10/10 02:27:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin".' in /var/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('admin')
+#1 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/smartad/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/admin
+---
+2014/10/10 02:28:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/login".' in /var/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/login')
+#1 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/smartad/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/admin/login
+---
+2014/10/10 02:31:29 [error] [exception.CException] exception 'CException' with message 'UserController cannot find the requested view "login".' in /var/www/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/framework/web/CController.php(782): CController->renderPartial('login', Array, true)
+#1 /var/www/smartad/protected/modules/admin/controllers/UserController.php(188): CController->render('login', Array)
+#2 /var/www/framework/web/actions/CInlineAction.php(49): UserController->actionLogin()
+#3 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /var/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /var/www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /var/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#10 /var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/framework/web/CWebApplication.php(282): CController->run('login')
+#12 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/user/logi...')
+#13 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/smartad/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php/admin/user/login
+---
+2014/10/10 02:32:29 [error] [exception.CException] exception 'CException' with message 'UserController cannot find the requested view "login".' in /var/www/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/framework/web/CController.php(782): CController->renderPartial('login', Array, true)
+#1 /var/www/smartad/protected/modules/admin/controllers/UserController.php(188): CController->render('login', Array)
+#2 /var/www/framework/web/actions/CInlineAction.php(49): UserController->actionLogin()
+#3 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /var/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /var/www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /var/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#10 /var/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/framework/web/CWebApplication.php(282): CController->run('login')
+#12 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/user/logi...')
+#13 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/smartad/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php/admin/user/login
+---
